@@ -1,0 +1,187 @@
+body {
+    height: 600px;
+    background-color: #000C1B;
+}
+
+#Titulo {
+    font-size: 100px;
+}
+
+/*CABEÇA DO SITE*/
+.header {
+    background-color: #000C1B ;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/*AQUI É O "GOTRIP" DO CABEÇALHO*/
+.site-title a {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: #A4BDDA;
+    text-decoration: none;
+}
+
+/**/
+
+.header-links {
+    display: flex;
+    list-style: none;
+    margin-right: 0;
+    text-decoration: none;
+}
+
+
+.header-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: large;
+}
+
+
+
+
+
+/*DIVISAO DO SITE USANDO O QUADRADO, PODEMOS COLOCAR A IMAGEM AQUI SE QUISER*/
+
+.left-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #0D2A4E;
+    font-size: 35px;
+    text-align: left;
+    color: #2d6ebd;
+    overflow: hidden;
+  }
+  
+  .animacaoTexto {
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    padding: 20px;
+    animation: typing 3s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #3a6aa5;
+    }
+  }
+
+
+
+  .right-section {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    right: 0;
+    height: 100vh;
+    /*100% da altura visível */
+    background-color: #2A4A71;
+}
+
+
+
+/* Aplicar a animação à classe .slideshow-container */
+.slideshow-container {
+    animation: changeSlide 15s infinite;
+}
+
+/*Rolar mais suave no site*/
+html {
+    scroll-behavior: smooth;
+}
+/*MAPA MUNDI, CORES, TAMANHO...*/
+svg {
+    height: auto;
+    width: auto;
+    background-color: #020d70;
+    border-radius: 10px;
+    margin-top: 100vh;
+}
+.AmericaSul {
+    cursor: pointer;
+    fill: #077c34;
+}
+#Ca {
+    cursor: pointer;
+    fill: #c52906;
+}
+#CH {
+    cursor: pointer;
+    fill: #f18b05;
+}
+#Jp {
+
+    cursor: pointer;
+    fill: #fd0606;
+}
+#Ng {
+
+    cursor: pointer;
+    fill: rgb(147, 201, 0);
+}
+#ch {
+
+    cursor: pointer;
+    fill: #ff2600;
+}
+#rs {
+    cursor: pointer;
+    fill: #f8be00fa;
+}
+#Fr {
+    cursor: pointer;
+    fill: rgba(0, 140, 255, 0.98);
+}
+#AU {
+    cursor: pointer;
+    fill: #f7eb42fa;
+}
+#EU {
+    cursor: pointer;
+    fill: #547af7fa;
+}
+.AF {
+    cursor: pointer;
+    fill: #f76707;
+}
+/*Rodapé do site*/
+  #rodape {
+    background-color: #0000005e; 
+    color: #fff; 
+    text-align: center; 
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+    align-items: center;
+    height: 300px;
+    min-height: 90%;
+    position: relative;
+  }
+  

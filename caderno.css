@@ -1,0 +1,55 @@
+body {
+  height: 90vh;
+    background-color: rgb(0, 195, 255); /* Tom de azul para o fundo da página */
+  }
+  .caderno {
+    max-width: 510px;
+    margin: 78px auto;
+    padding: 18px;
+    background-color: #000C1B; /* Tom diferente de azul para o caderno */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    float: center;
+    text-shadow: #000C1B
+  }
+  .bloco {
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 490px;
+  }
+  .bloco h2 {
+    color: rgb(7, 40, 46);
+  }
+  .bloco textarea {
+    width: 100%;
+    height: 100px;
+  }
+
+
+  
+  .container {
+    display: flex;
+}
+
+.texto-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 700px; /* Largura desejada para o título */
+    padding: 10px; /* Espaçamento interno desejado */
+    font-size: 60px;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container p {
+    margin-left: 220px; /* Deixe um espaço à direita do título para o conteúdo */
+}
+
+
+

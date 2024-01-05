@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"><link rel="shortcut icon" href="GoTrip-removebg-preview.png" type="" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="caderno.css">
+    <title>Roteiro de Viagem</title>
+</head>
+<body>
+
+
+
+
+    <div class="header">
+        <div class="site-title"><strong><a href="index.html">GoTrip</a></strong></div>
+        <ul class="header-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+        </ul>
+    </div>in
+
+<style>
+ body{
+  background-color: #0D2A4E;
+ }
+/*CABEÇA DO SITE*/
+.header {
+    background-color: #000C1B ;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/*AQUI É O "GOTRIP" DO CABEÇALHO*/
+.site-title a {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: #A4BDDA;
+    text-decoration: none;
+}
+
+/**/
+
+.header-links {
+    display: flex;
+    list-style: none;
+    margin-right: 0;
+    text-decoration: none;
+}
+
+
+.header-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+
+<div class="caderno">
+  <div class="bloco">
+      <h2>País/ Cidade</h2>
+      <textarea id="pais"></textarea>
+  </div>
+  <div class="bloco">
+      <h2>Data de Partida e Retorno</h2>
+      <textarea id="datas"></textarea>
+  </div>
+  <div class="bloco">
+      <h2>O que levar</h2>
+      <select id="levar" onchange="atualizarCampoLevar()">
+          <option value="">Sugestões</option>
+          <option>Água</option>
+          <option>Kit de primeiros socorros</option>
+          <option>Repelente de insetos</option>
+          <option>Protetor solar</option>
+          <option>Medicamentos</option>
+          <option>___________________</option>
+
+          <option>Roupa de banho</option>
+          <option>Óculos de sol</option>
+          <option>Chapéu</option>
+          <option>Meias Extra</option>
+          <option>___________________</option>
+    
+          <option>Carregador portátil</option>
+          <option>Câmera fotográfica</option>
+          <option>Fone de Ouvido</option>
+          <option>_______________________</option>
+
+          <option>Lanterna</option>
+          <option>Mapa/ GPS</option>
+          <option>Caderno e caneta</option>
+          <option>Lanchinhos</option>
+          <option>Livro</option>
+
+          
+          
+      </select>
+      <textarea id="levarSelecionado"></textarea>
+  </div>
+  <div class="bloco">
+      <h2>Anotações</h2>
+      <textarea id="anotacoes"></textarea>
+  </div>
+</div>
+
+<script>
+  function atualizarCampoLevar() {
+      var select = document.getElementById("levar");
+      var selectedOption = select.options[select.selectedIndex].value;
+      var campoLevar = document.getElementById("levarSelecionado");
+
+      // Adiciona a nova opção ao textarea (com uma quebra de linha se já houver texto)
+      campoLevar.value += selectedOption + "\n";
+  }
+</script>
+
+    
+    
+    
+    
+
+
+      <script src="caderno.js"></script>
+</body>
+</html>
