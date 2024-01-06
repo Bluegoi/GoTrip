@@ -4,7 +4,7 @@
     <meta charset="UTF-8"><link rel="shortcut icon" href="GoTrip-removebg-preview.png" type="" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Japão</title>
+    <title>Japão Cultura</title>
 </head>
 <body>
     <style>
@@ -25,6 +25,7 @@
         .sidebar {
     background-color: rgb(155, 4, 4);
     position: absolute;
+    min-height: 220vh;
     top: 0; 
     left: 0;
     display: flex;
@@ -46,43 +47,62 @@
 
 .JapaoCultura{
     scroll-behavior: smooth;
+}        #TextoPais {
+  position: relative;
+  margin-top: 13vh;
+  color: rgb(255, 255, 255);
+  text-align: left; 
+  max-width: 35%; 
+  font-size: 4vh;
+  left: 14vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  float: left; 
 }
-#Nomepais{
-      position: fixed;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: rgb(241, 241, 241);
-      left: 40vh; 
-      top: 0vh; 
-      font-size: 15vh;
-}
-#BandeiraPais{
-    position: fixed;
-    display: flex;
-    left: 70vh;
-    height: 80vh;
-    top: 16vh;
-    width: auto;
-    border-radius: 10vh;
-    border: 2px solid #f1efef;
     
+#imgJapan{ border-radius: 3vh;  width: 43vw;
+  height: auto;
+  margin-left: 17vw;
+  margin-top: 13vh; 
+}
+
+#imgJapan2 { border-radius: 3vh;    display: flex;
+  width: 43vw;
+  height: auto;
+  margin-left: 51vw;
+  margin-top: 5vh; 
+}
+
+#imgJapan3 { border-radius: 3vh;    display: flex;
+  width: 43vw;
+  height: auto;
+  margin-left: 51vw;
+  margin-top: 5vh;
+}
+      #botaoClicado{
+        background-color: rgba(122, 0, 0, 0.911);
 }
 
     </style>
 
+<h1 id="TextoPais">Como o Japão esteve relativamente isolado do mundo até o século XVI, várias características milenares de seu povo se mantiveram preservadas por muito tempo. <br><br>Boa parte da cultura dos japoneses teve origem na cultura chinesa: <br>foi a distância de mais de 3.000 km entre os dois países que possibilitou que a cultura nipônica desenvolvesse seus traços e ganhasse uma “cara própria”. <br><br>O cenário só começou a mudar quando grandes grupos de imigrantes estrangeiros passaram a desembarcar no país. Com os estrangeiros vieram novas influências que não modificaram, mas agregaram ainda mais valor à cultura do Japão, mas mantém o budismo, além do xitoísmo.
+<hr><br>
+	Apesar dessas influências ↑ <br>o Japão gerou um estilo único de artes (ikebana, origami, ukiyo-e), técnicas artesanais (bonecas, objetos lacados, cerâmica), espetáculo (dança, kabuki, noh, raku-go, Yosakoi, Bunraku), música (Sankyoku, Joruri e Taiko) e tradições (jogos, onsen, sento, cerimónia do chá), além de uma culinária única. <br><br>Hoje a cultura dos japoneses também é uma das mais tradicionais do mundo, mantendo rituais e ritos familiares e religiosos. Japão moderno é um dos maiores exportadores do mundo de cultura, com mangás e animes.
+ </h1>
+<img id="imgJapan" src="cultura 1.webp" alt="">
+<img id="imgJapan2" src="" alt="">
+<img id="imgJapan3" src="cultura 3.jpg" alt="">
+<img id="imgJapan3" src="cultura 4.jpg" alt="">
 
 
 
-<h1 id="Nomepais"> J <br> A <br> P <br> Ã <br> O</h1>
-<img id="BandeiraPais" src="bandeira-do-japao.webp" alt="">
 
 
 <div class="container">
     <div class="sidebar">
          <button>Navegue Aqui ↓</button>
-       
-        <a href="JapaoCultura.html"><button>Cultura</button></a>
-        <a href="JapaoPontoTuristico.html"><button>Ponto Turístico</button>
-        </a><a href="JapaoComida.html"><button>Comida Típica</button></a>
+        
+        <button  id="botaoClicado">Cultura </button>
+        <a href="JapaoPontoTuristico.html"><button>Ponto Turístico</button></a><a href="JapaoComida.html"><button>Comida Típica</button></a>
         
         <a href="JapaoIdioma.html"><button>Idioma</button></a>
         <a href="JapaoInfoGeo.html"><button>Informações Geográficas</button></a>
